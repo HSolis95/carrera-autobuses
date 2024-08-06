@@ -24,5 +24,7 @@ jobs:
     - name: Install windows-curses
       run: pip install windows-curses
 
-    - name: Run the script
+    - name: Run the script in test mode
+      env:
+        TEST_MODE: true
       run: python carrera_autobuses.py
